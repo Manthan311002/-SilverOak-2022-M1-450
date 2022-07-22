@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL" style="border:5px solid black	">
+			<li>Google
+				<ul>
+					<li>Gmail
+						<ul style="color:rgb(255, 0, 0)">
+							<li>Sign Up</li>
+							<li><button>Sign In</button>
+								<ul style="color:rgb(0, 4, 255)">
+									<li>Sign In As Admin</li>
+									<li>Sign In As Member</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Youtube</li>
+					<li>GDrive</li>
+					<li>GMap</li>
+				</ul>
+			</li>
+			<li>Facebook</li>
+			<li>Microsoft
+				<ul>
+					<li>Bing</li>
+					<li>Linked In</li>
+				</ul>
+			</li>
+			<li>MSN</li>
+			<li>Amazon
+				<ul>
+					<li>AWS</li>
+					<li>Ecommerce</li>
+					<li>A-ML</li>
+				</ul>
+			</li>
+			<li>Flipkart
+				<ul>
+					<li>AWS</li>
+					<li>Ecommerce</li>
+					<li>A-ML</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+</html>
